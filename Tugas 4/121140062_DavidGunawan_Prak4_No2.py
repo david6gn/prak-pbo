@@ -5,7 +5,7 @@ DAVID GUNAWAN/121140062/PBO RB
 
 class Robot:
     jumlah_turn = 0
-    def __init__(self, health, damage,buff):
+    def __init__(self, health, damage, buff):
         self.nama = type(self).__name__
         self.health = health
         self.damage = damage
@@ -28,7 +28,7 @@ class Robot:
 
 class Antares(Robot):
     def __init__(self, health = 50000, damage = 5000,buff = 3):
-        super().__init__(health, damage,buff)
+        super().__init__(health, damage, buff)
 
     def skill(self):
         print ("Menambah damage menjadi 1.5x dan ", end='')
@@ -36,7 +36,7 @@ class Antares(Robot):
         
 class Alphasetia(Robot):
     def __init__(self, health = 40000, damage = 6000,buff = 2):
-        super().__init__(health, damage,buff)
+        super().__init__(health, damage, buff)
 
     def skill(self):
         print ("Menambah darah sebanyak 4000 HP ",end='')
@@ -45,7 +45,7 @@ class Alphasetia(Robot):
 
 class Lecalicus(Robot):
     def __init__(self, health = 45000, damage = 5500, buff = 4):
-        super().__init__(health, damage,buff)
+        super().__init__(health, damage, buff)
 
     def skill(self):
         self.health+=7000
